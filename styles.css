@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: rgb(240, 126, 1);
+    --accent-color: #252422;
+    --charocal-color: #cccccc;
+    --white-color: white;
+    --gray-color: rgb(167, 167, 167);
+
+    --orange: 238, 122, 0;
+    --blue: 31, 165, 228;
+    --yellow: 241, 190, 67;
+
+    --ff-primary: "Playfair", "Playfair Placeholder", serif;
+    
+
+
+    --fs-s: 1em;
+    --fs-base: 1.1428571428571428em;
+    --fs-m: 1.2857142857142858em;
+    --fs-l: 1.7142857142857142em;
+    --fs-xl: 2.2857142857142856em;  
+    --fs-xxl: 3.4285714285714284em;
+    --fs-xxxl: 4.285714285714286em;
+    --fs-xxxxl: 6em;
+
+    --lh-thin: 100%;
+    --lh-base: 125%;
+    --lh-thick: 150%:
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: var(--accent-color);
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-xxxxl);
+    color: var(--white-color);
+    padding: 60px 20px 100px 20px;
+    line-height: var(--lh-thin);
+}
+
+.golmaal-logo {
+    width: 100px;
+}
+
+.description-container {
+    padding: 40px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: var(--fs-l);
+    font-family: var(--ff-primary, Inter, Inter Placeholder, sans-serif)
+    
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px 2px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0A4B84;
+}
+
+.category-container {
+    background-color: var(--white-color);
+    color: var(--white-color);
+    margin: 12px 12px 28px;
+    border-radius: 40px;
+    border-color: var(--accent-color);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.category-dropdown {
+    height: 48px;
+    font-size: var(--fs-s);
+    background-color:var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 36px;
+    padding: 12px 48px;
+
+}  
+
+select 
+{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -o-appearance:none;
+   appearance:none; 
+}
+
+/* tr:nth-child(odd) {
+    background-color: #FFAB61;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F6D88E;
+    color: white;
+} */
+
+.list-container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.category-background {
+    object-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center
+
+}
+
+#veg-delights{
+    background-image: url(images/bg1.png);
+}
+
+#non-veg{
+    background-image: url(images/bg2.png);
+}
+
+#fish{
+    background-image: url(images/bg3.png);
+}
+
+#veg-tandoori{
+    background-image: url(images/bg4.png);
+}
+
+#nonveg-tandoori{
+    background-image: url(images/bg5.png);
+}
+
+#chinese-item{
+    background-image: url(images/bg6.png);
+}
+
+#veg-maincourse{
+    background-image: url(images/bg7.png);
+    
+}
+
+#nonveg-maincourse{
+    background-image: url(images/bg8.png);
+}
+
+#breads{
+    background-image: url(images/bg9.png);
+}
+
+
+table {
+    width: 100%;
+    padding: 16px 12px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+td {
+    padding: 8px;
+    font-size: var(--fs-m);
+    font-weight: 700;
+    color: var(--accent-color);
+}
+/* 
+ Removes dropdown arrow icon from summary in expand and collapse state.
+ Reference: https://stackoverflow.com/a/10813665 
+*/
+details > summary {
+    list-style-type: '';
+}
+
+details[open] > summary {
+    list-style-type: '';
+}
+
+footer {
+    position: relative;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+    margin: 12px 16px;
+    margin-top: 48px;
+}
+
+.footer-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: var(--fs-m);
+    text-align: center;
+    color:black ;
+    font-weight: 900;
+    text-transform: uppercase;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
