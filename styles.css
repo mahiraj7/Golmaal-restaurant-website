@@ -93,11 +93,8 @@ h2 {
     padding: 12px 36px;
 }  
 
-select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  -o-appearance:none;
-   appearance:none; 
+details summary::-webkit-details-marker {
+    display:none;
 }
 
 .category-background {
