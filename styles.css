@@ -37,14 +37,24 @@ body {
 .header-container {
     background-color: var(--accent-color);
     text-align: center;
-    font-size: var(--fs-xxxxl);
     color: var(--white-color);
-    padding: 60px 20px 100px 20px;
+    padding: 40px 20px 80px 20px;
+}
+
+.header-container > p {
+    font-size: var(--fs-s);
+    padding: 0px;
+    margin: 8px auto;
+}
+
+header {
+    margin-top: 16px;
+    font-size: var(--fs-xxl);
     line-height: var(--lh-thin);
 }
 
 .golmaal-logo {
-    width: 100px;
+    width: 120px;
 }
 
 .description-container {
