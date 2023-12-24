@@ -48,7 +48,7 @@ body {
 }
 
 header {
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: var(--fs-xxl);
     line-height: var(--lh-thin);
 }
